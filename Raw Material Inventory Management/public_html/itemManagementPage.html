@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard</title>
+
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Tempusdominus Bootstrap 4 -->
+        <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+        <!-- iCheck -->
+        <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+        <!-- JQVMap -->
+        <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+        <!-- overlayScrollbars -->
+        <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+        <!-- Daterange picker -->
+        <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+        <!-- summernote -->
+        <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+    </head>
+    <body >
+        <h1>Inventory</h1>
+        <div class="wrapper">
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                        <li class="nav-item">
+                            <a href="./itemManagementPage.html" class="nav-link active">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Item Management Page</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./itemReceivedPage.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Item Received Page</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./itemIssuePage.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Item Issue Page</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./itemReportPage.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Item Report Page</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+                
+                <div id="EmpForm">
+                    <h1>Item Management Form</h1>
+                    <form>
+                        <div class="row mb-3">
+                            <label for="itemId" class="col-sm-2 col-form-label">Item Id:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="itemId">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="itemName" class="col-sm-2 col-form-label">Item Name:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="itemName">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="stock" class="col-sm-2 col-form-label">Opening Stock :</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="stock">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="measure" class="col-sm-2 col-form-label">Unit of Measurement:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="measure">
+                            </div>
+                        </div>
+        
+                        <button type="button" id="saveBtn" class="btn btn-primary" onclick="saveForm()">Save</button>
+                        <button type="button" id="editBtn" class="btn btn-primary" onclick="editForm()">Edit</button>
+                        <button type="button" id="changeBtn" class="btn btn-primary" onclick="updateForm()">Change</button>
+                        <button type="button" id="resetBtn" class="btn btn-primary" onclick="resetForm()">Reset</button>
+                    </form>
+                </div>
+    </body>
